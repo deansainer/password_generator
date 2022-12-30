@@ -13,6 +13,7 @@ class IndexPage(TemplateView):
 
     def get(self, request, *args, **kwargs):
         form = IndexForm()
+
         return render(request, self.template_name, context={'form': form})
 
     def post(self, request):
@@ -22,7 +23,8 @@ class IndexPage(TemplateView):
             letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
             numbers = '1234567890'
             special_numbers = '!@#$%^&*()_+~=-'
-            password = [random.choice(letters + numbers + special_numbers) for i in range(password_length)]
+
+            password = [random.choice(letters) for i in range(password_length)]
             password1 = ''.join(password)
         return render(request, self.template_name, context={'form': form, 'password': password1})
 
