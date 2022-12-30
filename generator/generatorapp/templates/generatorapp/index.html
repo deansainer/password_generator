@@ -1,7 +1,15 @@
-<br>
+{% block content %}
+    <br>
+    <br>
 <center>
-<div>
-<h3>Generated password: </h3>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+
+<button type="submit" name="generate">Generate</button>
+</form>
+
+<h2>Generated password:</h2>
 <h1>{{password}}</h1>
-</div>
 </center>
+{% endblock %}
