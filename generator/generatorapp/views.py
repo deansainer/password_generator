@@ -23,8 +23,13 @@ class IndexPage(TemplateView):
             letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
             numbers = '1234567890'
             special_numbers = '!@#$%^&*()_+~=-'
+            if 'letters' in request.POST:
+                password = [random.choice(letters) for i in range(password_length)]
+            if 'letters_numbers' in request.POST:
+                password = [random.choice(letters+numbers) for i in range(password_length)]
+            if 'letters_numbers_special' in request.POST:
+                password = [random.choice(letters+numbers+special_numbers) for i in range(password_length)]
 
-            password = [random.choice(letters) for i in range(password_length)]
-            password1 = ''.join(password)
-        return render(request, self.template_name, context={'form': form, 'password': password1})
+            final_password = ''.join(password)
+        return render(request, self.template_name, context={'form': form, 'password': final_password})
 

@@ -6,9 +6,11 @@
     {% csrf_token %}
     {{form.as_p}}
 
-<button type="submit" name="generate">Generate</button>
-</form>
+<button type="submit" name="letters">Only Letters</button><br>
+<br><button type="submit" name="letters_numbers">Letters & Numbers</button><br>
+<br><button type="submit" name="letters_numbers_special">Letters & Numbers & Special numbers</button><br>
 
+</form>
 <h2>Generated password:</h2>
 <h1>{{password}}</h1>
 </center>

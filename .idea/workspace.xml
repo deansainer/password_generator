@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d89c09b-5b9b-4e1d-969b-ec2daa30f3a3" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/generatorapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/generatorapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/generatorapp/templates/generatorapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/generator/generatorapp/templates/generatorapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator/generatorapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/generatorapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +38,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/django_projects/password_generator"
   }
 }]]></component>
   <component name="RunManager">
@@ -72,7 +75,12 @@
       <option name="presentableId" value="Default" />
       <updated>1672318247884</updated>
       <workItem from="1672318252486" duration="5606000" />
-      <workItem from="1672356317180" duration="5155000" />
+      <workItem from="1672356317180" duration="5345000" />
+      <workItem from="1672744887238" duration="3132000" />
+      <workItem from="1672960275094" duration="9000" />
+      <workItem from="1673007306009" duration="1117000" />
+      <workItem from="1673909763350" duration="199000" />
+      <workItem from="1673911802433" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1672360619304</created>
@@ -81,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672360619304</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1672361650980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672361650980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
